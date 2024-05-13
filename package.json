@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@faceio/fiojs": "^1.1.0",
+    "@next/env": "^14.2.3",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
