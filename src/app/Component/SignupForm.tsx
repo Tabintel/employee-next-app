@@ -13,10 +13,8 @@ interface Payload {
 const SignUpForm: React.FC = () => {
   const router = useRouter();
 
-  const faceioAppId = process.env.FACEIO_APP_ID;
-
-  const faceio = new faceIO(faceioAppId);
-  // const faceio = new faceIO("");
+  const faceioID = process.env.NEXT_PUBLIC_FACE_IO_ID;
+  const faceio = new faceIO(faceioID);
 
   const [payload, setPayload] = useState<Payload>({ userEmail: "", pin: "" });
   const [isSigningUp, setIsSigningUp] = useState<boolean>(false); // New state variable
